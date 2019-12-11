@@ -30,6 +30,18 @@ body {
     font-size: 1.25em;
   }
 
+  .branding {
+    background-color: var(--col-accent2);
+    color: var(--col-accent2-fg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+
   .others {
   background-color: var(--col-accent1);
   color: var(--col-accent1-fg);
