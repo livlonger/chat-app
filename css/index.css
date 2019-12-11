@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 :root {
   --col-bg: #ffffff;
   --col-bg-fg: #222222;
@@ -14,6 +16,9 @@
   --font-body: serif;
   --font-heading: sans-serif;
   --animations: 0.3s;
+
+  --usercard-height : 4em;
+
 }
 
 body {
@@ -83,6 +88,75 @@ opacity: 1;
     padding: 0 1em;
     margin-top: 2.1875em;
   }
+
+
+
+
+
+  .usercard {
+      margin: 0 0 0 0;
+
+      height : 7em;
+      width : 100%;
+      padding-top : 1em;
+
+      display: grid;
+      grid-template-columns: 5em 1fr;
+
+      box-sizing: border-box;
+      
+  }
+
+  .usercard:hover {
+      background-color : rgba(0,0,0,0.1);
+  }
+
+  .user-pic {
+      height : var(--usercard-height);
+      width : var(--usercard-height);
+
+      margin : 0.7em auto;
+      
+      
+      border-radius: 100%;
+      background-color : white;
+      overflow: hidden;
+
+  }
+
+  .user-info {
+      margin : 0 0 0 0;
+      padding : 0 2em 0 0;
+
+      height: var(--usercard-height);
+
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  .user-name {
+      padding : 0 0 0 1em;
+      color : white;
+      font-size : 1.2em;
+  }
+
+  .last-messege {
+    color : white;
+    padding : 0 0 0 3em;
+  }
+
+  .last-seen {
+      padding : 0 0 0 3.5em;
+      color : rgba(255,255,255,0.59)
+  }
+
+
+
+
+
+
+
+
+
 
   @media screen and (min-width: 40em) {
     .others {
